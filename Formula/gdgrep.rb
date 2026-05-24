@@ -2,7 +2,7 @@
 #
 # This file lives in the gdgrep source repo as a reference copy.
 # The release workflow copies it to jeffscottbrown/homebrew-gdgrep and
-# replaces the v0.4.4 and SHA256_* tokens with real values.
+# replaces the v0.8.1 and SHA256_* tokens with real values.
 #
 # To set up the tap repo for the first time:
 #   1. Create https://github.com/jeffscottbrown/homebrew-gdgrep
@@ -14,24 +14,24 @@
 class Gdgrep < Formula
   desc "Fast, friendly grep written in the Jerry language"
   homepage "https://github.com/jeffscottbrown/gdgrep"
-  version "v0.4.4"
+  version "v0.8.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/jeffscottbrown/gdgrep/releases/download/v0.4.4/gdgrep-macos-arm64.tar.gz"
-      sha256 "4f7d4ec9a092f65fdaef076d5486bafdf863c7161de3221d6d2b9070979002ff"
+      url "https://github.com/jeffscottbrown/gdgrep/releases/download/v0.8.1/gdgrep-macos-arm64.tar.gz"
+      sha256 "459a0374c3c6c344447fd4fad86041714c2b0154568a85e5d7d94b64e81a9f98"
     end
     on_intel do
-      url "https://github.com/jeffscottbrown/gdgrep/releases/download/v0.4.4/gdgrep-macos-x86_64.tar.gz"
-      sha256 "7cd532c9851bac4db2b655d579be6fa59e0cf27006bb378898f4b04d5e5e77c6"
+      url "https://github.com/jeffscottbrown/gdgrep/releases/download/v0.8.1/gdgrep-macos-x86_64.tar.gz"
+      sha256 "3fb005002a6b55363619e38f83f6113669f7681aac3ed86958a91e9250ef370b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jeffscottbrown/gdgrep/releases/download/v0.4.4/gdgrep-linux-x86_64.tar.gz"
-      sha256 "968f03a5521d3e9db4deb52a55516fd5bfaf6095fd07e37cd6aff251da82b188"
+      url "https://github.com/jeffscottbrown/gdgrep/releases/download/v0.8.1/gdgrep-linux-x86_64.tar.gz"
+      sha256 "a687e6f6d784a7404657c14cbf1e3f8e5ba5bfa21b7d9116d460087dd7234e06"
     end
   end
 
